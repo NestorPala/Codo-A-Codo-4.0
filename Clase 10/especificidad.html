@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        p {
+            color: red !important;
+        }
+
+        .destacado {
+            color: green !important;
+        }
+
+        #primer-parrafo {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- especificidad (menor a mayor):  elemento  <<  clase  <<  id  <<  style  <<  !important  <<  último !important (cascada) -->
+    <!-- el elemento más específico tiene mayor importancia a la hora de aplicar las propiedades -->
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p class="destacado" id="primer-parrafo" style="color: brown">Lorem, ipsum dolor.</p>
+    <p>Lorem, ipsum dolor.</p>
+</body>
+</html>

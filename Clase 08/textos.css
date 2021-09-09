@@ -1,0 +1,46 @@
+/* @import url(style.css); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
+
+h1 {
+    /* 1rem: 1x el tamaño de la fuente en html (por defecto 16px) */
+    /* 1em: 1x el tamaño de la fuente del contenedor */
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Cambria', serif;
+    text-align: center;
+}
+
+h2 {
+    color: orange;
+    font-family: 'Roboto', sans-serif;
+    font-style: oblique;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Hina Mincho', serif;
+}
+
+#texto-tachado {
+    text-decoration: line-through violet;
+}
+
+a {
+    text-decoration: none;
+}
+
+#imagen {
+    /*Hack para centrar imágenes*/
+    text-align: center;
+}
+
+.texto-apretado {
+    line-height: 0.8;
+}
+
+.logos {
+    height: 1.25%;
+    width: 1.25%;
+}

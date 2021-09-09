@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <!--viewport es la parte visible de la página, content ajusta el contenido para los distintos dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi página</title>
+</head>
+<body>
+    <h1>Título del contenido</h1>
+
+    <!--Enlace interno-->
+    <a href="#seccion-5">Ir a la sección 5</a>
+
+    <!--div separa el contenido en partes, cada parte ocupa todo el ancho disponible de la pantalla-->
+    <div>
+        <h2>Sección 1</h2>
+        <p>Lorem ipsum, dolor sit <a href="https://www.google.com/" target="_blank">amet</a> consectetur adipisicing elit. Repellendus amet alias aspernatur vel asperiores repudiandae consequuntur doloremque qui neque magni, est eum nulla cum quidem dolorem consectetur architecto tenetur! Necessitatibus.</p>
+
+        <h2>Sección 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate accusantium explicabo hic non natus maxime.</p>
+            <p><a href="/noticias/contacto.html">Contacto</a></p>
+    </div>
+
+    <div>
+        <h2>Sección 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit optio culpa est!</p>
+
+        <h2>Sección 4</h2> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae dolorem saepe consequatur corrupti sunt at exercitationem!</p>
+    </div>
+
+    <div>
+        <!--Asignamos un vínculo a una imagen-->
+        <a href="https://www.google.com/"><img src="google.png"></a>
+    </div>
+
+    <div id="seccion-5">
+        <h2>Sección 5</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quo, voluptatibus facere commodi nemo tenetur libero aperiam neque tempore numquam dolore, doloremque nihil necessitatibus maiores voluptate eveniet quasi quas sunt.</p>
+    </div>
+
+    <div>
+        <h2>Sección 6</h2> 
+        <!--Insertamos contenido de una página externa-->
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/YnwsMEabmSo" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+        ></iframe>
+    </div>
+
+    <div>
+        <h2>Sección 7</h2>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.39707532423!2d-58.573384947566005!3d-34.615461116377574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses!2sar!4v1628812410809!5m2!1ses!2sar" 
+            width="400" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+        ></iframe>
+    </div>
+</body>
+</html>

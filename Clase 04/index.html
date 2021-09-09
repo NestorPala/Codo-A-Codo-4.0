@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        div {
+            margin: 1.75% 1.5%;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://www.google.com/"><img src="logo_empresa.png" alt="Logo Empresa"></a>
+    <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Registrarse</h1>
+    <form action="https://formspree.io/f/mqkwwzyy" method="POST" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+        <div>
+            <label for="name1">Nombre</label>
+            <input type="text" name="nombre" id="name1" placeholder="Juan" required>
+        </div>
+        <div>
+            <label for="last1">Apellido</label>
+            <input type="text" name="apellido" id="last1" placeholder="Perez" required>
+        </div>
+        <div>
+            <label for="email1">E-Mail</label>
+            <input type="email" name="correo" id="email1" placeholder="juan_perez@pepe.com" required>
+        </div>
+        <div>
+            <label for="pass1">Contraseña</label>
+            <input type="password" name="clave" id="pass1" placeholder="**********" required>
+        </div>
+        <div>
+            <label for="message1">Mensaje</label>
+            <textarea 
+                name="mensaje" 
+                id="message1" 
+                cols="30" 
+                rows="10" 
+                style="resize: none;" 
+                placeholder="Este es un mensaje de prueba. Saludos."></textarea>
+        </div>
+        <div>
+            <label for="city1">Ciudad</label>
+            <select name="ciudad" id="city1" required>
+                <option value=""></option>
+                <option value="text">Buenos Aires</option>
+                <option value="text">Córdoba</option>
+                <option value="text">Rosario</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>

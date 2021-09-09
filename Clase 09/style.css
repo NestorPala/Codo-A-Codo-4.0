@@ -1,0 +1,46 @@
+body {
+    height: 200vh;
+}
+
+.container {
+    background-color: teal;
+    padding: 1em;
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.cuadrado-fixed {
+    background-color: darkorange;
+    /*position: static --> la posicion original*/
+    position: fixed; /*pegado en una posición del viewport, que se mantiene al scrollear. El objeto fixed pierde su 
+                       ubicación por defecto original y dicho espacio es ocupado por el resto de la página*/
+    right: 50%;
+    top: 0;
+}
+.cuadrado-relative {
+    background-color: darkorange;
+    position: relative; /*posición relativa respecto de su posición por defecto*/
+    left: 100px;
+    top: 50px;
+
+}
+.cuadrado-absolute {
+    width: 100px;
+    height: 100px;
+    background-color: darkorange;
+    position: absolute; /*posición con respecto a su primer contenedor con 'position: relative'. Si no encuentra uno, se 
+                          ubicará con respecto al <body>*/
+    left: 100px;
+    top: 0;
+}
+.cuadrado-sticky {
+    background-color: darkorange;
+    position: sticky; /*se queda estático hasta que se cumpla una condición, en este caso, top: 0. Cuando se cumple la 
+                        condición, el elemento se vuelve fixed hasta que su contenedor se va del viewport*/
+    top: 0;
+}

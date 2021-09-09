@@ -1,0 +1,39 @@
+.rojo {
+    color: gold;
+    background-color: red;
+}
+
+.negro {
+    color: white;
+    background-color: black;
+}
+
+.rojo, .negro {
+    width: 300px;
+    height: 300px;
+    font-size: 3rem;
+    margin: 16px;
+}
+
+#cuadrado1 {
+    position: absolute;
+    top: 0%;
+}
+
+#cuadrado2 {
+    position: absolute;
+    top: 0%;
+    left: 320px;
+}
+
+#cuadrado3 {
+    position: absolute;
+    top: 0%;
+    left: 630px;
+}
+
+#cuadrado4 {
+    position: absolute;
+    top: 0%;
+    left: 940px;
+}

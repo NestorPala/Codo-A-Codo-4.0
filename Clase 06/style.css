@@ -1,0 +1,26 @@
+body {
+    background-color: #0a0a0a;
+}
+
+h1 {
+    color: blue;
+    opacity: 0.75;
+}
+
+p {
+    color: white;
+    background-color: #9e3f2f;
+}
+
+div {
+    border: white 2px solid;
+
+    /*vw y vh son las width y height del viewport, es decir, la parte de contenido visible en el navegador*/
+    width: 75vw;
+    height: 75vh;
+}
+
+span {
+    /*em es el tamaño predefinido por el contenedor, si el contenedor no tiene un valor por defecto busca al parent, y así sucesivamente.*/
+    font-size: 1.5em;
+}
