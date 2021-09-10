@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces</title>
+    <style>
+        body {
+            margin: 10px;
+            word-spacing: 1em;
+        }
+        .enlace-texto {
+            color: orange;
+            text-decoration: none;
+        }
+        .enlace-texto:hover {
+            color: darkorange;
+            text-decoration: underline;
+            /*
+            :link
+            :visited
+            :hover
+            :focus
+            :active
+            */
+        }
+        a.boton-borde {
+            color: black;
+            border: 1px solid darkorange;
+            padding: 5px 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        a.boton-borde:hover {
+            background-color: darkorange;
+        }
+        a.boton-borde:active {
+            outline: 1px solid yellowgreen;
+            outline-offset: 5px;
+        }
+        a.boton-fondo {
+            padding: 5px 10px;
+            background-color: orange;
+            color: beige;
+            text-decoration: none;
+        }
+        a.boton-fondo:active {
+            background-color: darkorange;
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <a href="###">Texto</a>
+    <a href="#" class="enlace-texto" target="_blank">Texto</a>
+    <a href="https://www.google.com.ar/" class="boton-borde" target="_blank">Google</a>
+    <a href="https://www.google.com.ar/" class="boton-fondo">Google</a>
+</body>
+</html>

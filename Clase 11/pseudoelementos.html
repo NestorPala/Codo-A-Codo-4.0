@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoelementos</title>
+    <style>
+        /*acción a realizar cuando se selecciona el elemento*/
+        p::selection {
+            background-color: brown;
+            color: white;
+        }
+        p::first-line {
+            color: blueviolet;
+        }
+        h1::first-letter {
+            color: darkgreen;
+            font-size: 3em;
+        }
+        p::before {
+            content: '-- ';
+        }
+        p::after {
+            content: '!!!!';
+        }
+        .requerido::after {
+            content: '*';
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="requerido">Lorem, ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam veritatis praesentium perferendis nihil inventore voluptatem sit fuga nostrum vero reprehenderit reiciendis, ratione, iste dolorum? Cum aliquam aperiam aliquid rem quam alias, optio cupiditate qui, harum natus expedita? Magnam, odit velit quis suscipit quam dolorem, ab, provident labore neque deserunt quasi nulla fugit? Velit nesciunt provident error fugiat hic quisquam blanditiis!</p>
+</body>
+</html>
