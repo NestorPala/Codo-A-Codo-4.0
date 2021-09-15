@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <!--utilizamos bootstrap de manera local-->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam natus iste placeat ea animi est aliquam tenetur dicta dolorem sequi!</p>
+        </div>
+    </div>
+
+    <!--
+        Trabajando con Grid Layout 
+        >>>   comandos en notación Emmet
+
+        La página en Bootstrap se divide en 12 columnas:
+        >>>   (.col>{$})*12
+
+        Puedo definir cuantas columnas ocupa cada elemento:
+        ej. 4 columnas   >>>   (.col-4>{$})*12
+
+        Idealmente la cantidad de columnas tiene que sumar 12. Si me paso de 12, las columnas "sobrantes" se van a la siguiente fila (abajo). Si no llego a 12, las columnas se ajustan automáticamente para ocupar todo el ancho del container.
+
+        Puedo agregar bordes a las columnas:
+        >>>   (.col.border>{$})*12
+
+        Puedo especificar, para cada tamaño de pantalla (dispositivo), cuántas columnas va a ocupar cada elemento. (ver https://getbootstrap.com/docs/5.1/layout/breakpoints/). Ejemplo: creo 2 elementos que ocupen 6 columnas cada uno en un tamaño de pantalla "md" (mediano) pero que ocupen las 12 columnas cuando el tamaño de la pantalla del dispositivo sea pequeño "sm":
+        >>>   (.col.border.col-md-6.col-sm-12>{$})*2
+
+
+    -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col border col-md-6 col-sm-12">1</div>
+            <div class="col border col-md-6 col-sm-12">2</div>
+        </div>
+    </div>
+
+    <!--El script de bootstrap siempre se debe cargar al final porque sino el script se cargaría antes que la propia página. Para otros scripts también se recomienda-->
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
