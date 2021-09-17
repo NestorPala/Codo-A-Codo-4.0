@@ -1,0 +1,72 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #230529;
+}
+
+h1 {
+    margin: 30px;
+    color: azure;
+    font-size: 4em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 72px;
+    font-weight: bold;
+    margin: 50px 0px;
+}
+
+p {
+    font-size: 24px;
+}
+
+h2, p {
+    color: azure;
+}
+
+.nav.nav-pills {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.nav-item {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 24px;
+}
+
+.nav-link {
+    color: azure !important;
+}
+
+.dropdown-item {
+    margin: 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.caracteristica {
+    margin: 50vh 0vw;
+}
+
+.lateral-img {
+    position: absolute;
+    top:20%;
+    padding: 20px;
+}
+
+footer {
+    height: 60vh;
+    font-size: 12px;
+    background-color: #350b3d;
+    color: grey;
+}
+
+.legales, .copy {
+    padding: 3em;
+    text-align: justify;
+}
+
+.copy {
+    text-align: center;
+}
