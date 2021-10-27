@@ -1,0 +1,29 @@
+SQL Comandos básicos
+--------------------
+
+INSERT INTO usuarios VALUES (NULL, 'x@x.com', MD5('pepe'));
+INSERT INTO usuarios (email, password) VALUES ('y@y.com', MD5('1234'));
+
+----------------------------------------------------------------------------
+
+SELECT * FROM usuarios;
+SELECT nombre, email FROM usuarios;
+
+SELECT * FROM usuarios WHERE email = 'x@x.com';
+SELECT * FROM usuarios WHERE email LIKE '%x.com';
+SELECT * FROM usuarios WHERE email LIKE '%x.com%';
+https://www.w3schools.com/sql/sql_wildcards.asp;
+
+SELECT * FROM usuarios ORDER BY email ASC;
+
+----------------------------------------------------------------------------
+
+UPDATE usuarios SET username = 'User' WHERE id = 3;
+
+UPDATE usuarios
+SET username = 'Pepe', email = 'k@k.com' 
+WHERE email = 'a@a.com';
+
+----------------------------------------------------------------------------
+
+DELETE FROM usuarios WHERE id = 3;
