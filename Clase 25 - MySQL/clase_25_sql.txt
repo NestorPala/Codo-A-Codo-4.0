@@ -1,0 +1,70 @@
+SELECT *
+FROM productos, categorias
+WHERE productos.categoria_id = categorias.id;
+---------------------------------------------------------------
+(equivale a lo de arriba)
+
+SELECT *
+FROM productos
+INNER JOIN categorias
+ON productos.categoria_id = categorias.id;
+---------------------------------------------------------------
+SELECT productos.nombre AS producto, categorias.nombre AS categoria
+FROM productos 
+INNER JOIN categorias
+ON productos.categoria_id = categorias.id;
+---------------------------------------------------------------
+SELECT p.nombre AS producto, c.nombre AS categoria
+FROM productos AS p
+INNER JOIN categorias AS c
+ON p.categoria_id = c.id;
+---------------------------------------------------------------
+SELECT COUNT(*) AS cantidad_usuarios FROM usuarios;
+---------------------------------------------------------------
+SELECT COUNT(*) AS cantidad, c.nombre AS categoria
+FROM productos AS p
+INNER JOIN categorias AS c
+ON p.categoria_id = c.id
+GROUP BY c.id;
+---------------------------------------------------------------
+SELECT AVG(stock) FROM productos;
+---------------------------------------------------------------
+SELECT COUNT(*) AS cantidad, c.nombre
+FROM productos AS p
+INNER JOIN categorias AS c 
+ON p.categoria_id = c.id
+GROUP BY c.id
+HAVING cantidad = 1;
+
+(el having se usa porque no se puede utilizar where despues del group by)
+---------------------------------------------------------------
+SELECT p.nombre AS producto, c.nombre AS categoria
+FROM productos AS p
+LEFT JOIN categorias AS c
+ON p.categoria_id = c.id;
+
+(quiero todos los productos que tengan categorias, y los que no tengan también)
+(se parece a "SELECT * FROM productos", pero en este caso puedo traer datos de "categorias" también)
+---------------------------------------------------------------
+SELECT p.nombre AS producto, c.nombre AS categoria
+FROM productos AS p
+RIGHT JOIN categorias AS c
+ON p.categoria_id = c.id;
+
+(quiero todas las categorías que tengan productos, y las que no tengan también)
+(se parece a "SELECT * FROM categorias", pero en este caso puedo traer datos de "productos" también)
+---------------------------------------------------------------
+(para hacer los JOIN no es necesario que las tablas estén vinculadas por FK)
+---------------------------------------------------------------
+(Relaciones N a N, tabla intermedia)
+(ejemplo:  usuarios -->>  role_usuario  <<--  roles)
+(quiero obtener todos los usuarios que tengan roles y todos los roles que tengan usuarios)
+(hacemos una intersección triple)
+
+SELECT *
+FROM usuarios
+INNER JOIN role_usuario
+ON role_usuario.usuario_id = usuarios.id
+INNER JOIN roles
+ON roles.id = role_usuario.role_id;
+---------------------------------------------------------------
