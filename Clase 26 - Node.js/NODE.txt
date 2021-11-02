@@ -1,0 +1,15 @@
+node -v
+node .\primer-script.js
+node "C:\Users\Nestor\Desktop\GitHub\Codo-A-Codo-4.0\Clase 26 - Node.js\script.js"
+
+------------------------------------
+
+Hay comandos de JS que no funcionan en node:
+
+* alert()
+
+------------------------------------
+
+Hay que reiniciar el server luego de cada cambio
+
+* Ctrl-C
