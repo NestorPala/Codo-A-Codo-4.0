@@ -1,0 +1,32 @@
+NPM
+
+// Crea un proyecto de node
+npm init
+
+// Crea un proyecto de node automáticamente
+npm init -y
+
+// Instala un paquete, y todas sus dependencias
+npm install express
+
+// Algunos paquetes
+express, dotenv, nodemon
+
+// Chequea dependencias y regenera instalaciones de paquetes
+npm i
+
+// Cuando detecta cambios en el código, apaga y vuelve a encender el servidor por nosotros
+//(Se instala en %appdata%\npm\node_modules\nodemon)
+npm install -g nodemon
+
+// Inicia nodemon en un proyecto
+// (linux)
+nodemon .\index.js  
+// (windows)
+nodemon.cmd .\index.js  
+// (vscode)
+nodemon.cmd "C:\Users\Nestor\Desktop\GitHub\Codo-A-Codo-4.0\Clase 27 - Node.js - npm\index.js"
+
+// Apagar servidor manualmente
+Ctrl + C
+

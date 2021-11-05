@@ -1,0 +1,9 @@
+const express = require('express')
+const app = express()
+const port = 3000
+
+html = '<h1 style="font-family: consolas; font-size: 48px">Hola Express</h1>'
+
+app.get ('/', (req, res) => {res.send(html)})
+app.listen(port, () => console.log(`http://localhost:${port}`))
+
