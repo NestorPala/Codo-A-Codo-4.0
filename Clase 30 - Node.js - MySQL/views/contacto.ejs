@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+</head>
+<body>
+    <%- include('partials/menu') -%>
+
+    <h1>Contacto</h1>
+
+    <% if (typeof errors != 'undefined') { %> 
+        <ul>
+        <% errors.forEach((error) => { %>
+            <li><strong><%= error.param %></strong>: <%= error.msg %></li>
+        <% }) %>
+        </ul>
+    <% } %>
+
+    <form action="/contacto" method="post">
+        <div>
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" value="<%= values.nombre %>">
+        </div>
+        <div>
+            <label for="email">Correo: </label>
+            <input type="text" name="email" id="email" value="<%= values.email %>">
+        </div>
+        <div>
+            <label for="mensaje">Mensaje: </label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"><%= values.mensaje %></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+Generar contenido dinámico en páginas web usando node.js, express y EJS
+EJS es un motor de vistas (view engine)
+
+Herramientas similares: Pug, Handlebars
+
+
+0. Instalar EJS
+npm i ejs
+
+-----------------------------------------------------------------------------
+1. "app.js"
+const app = express()
+app.set('view engine', 'ejs')
+
+-----------------------------------------------------------------------------
+2. carpeta del proyecto (las vistas se guardan por defecto en 'views')
+views/index.ejs  -->>  acá escribimos la plantilla HTML
+
+-----------------------------------------------------------------------------
+3. "router.js"
+res.render('index')
+
+-----------------------------------------------------------------------------
+4. 
+
+En router.js:
+
+router.get('/productos/:nro', (req, res) => {
+    res.render('productos/show', {nro: req.params.nro})
+})
+
+
+En productos/show.ejs:
+
+<h1>Producto <%= nro%></h1>
+
+-----------------------------------------------------------------------------
+
+
+
+
